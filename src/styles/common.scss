@@ -1,0 +1,84 @@
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+ ul,li,ol{
+	 margin: 0;
+	 padding: 0;
+	list-style: none;
+}
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+.move-enter-active,
+.move-leave-active {
+    transition: opacity .1s ease;
+}
+
+.move-enter-from,
+.move-leave-to {
+    opacity: 0;
+}
+
+.el-scrollbar__view {
+  height: 100%;
+}
+
+@function vh($height){
+	$body-height:1080;
+	@return $height / $body-height * 100 + vh;
+}
+
+@function vw($width){
+	$body-width:1920;
+	@return $width / $body-width * 100 + vw;
+}

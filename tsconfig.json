@@ -1,0 +1,22 @@
+{
+   "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "allowSyntheticDefaultImports":true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "#/*": ["./src/types/*"]
+    }
+  },
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue","src/types/*.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "exclude": ["node_modules"]
+}
